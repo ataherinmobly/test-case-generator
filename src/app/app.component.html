@@ -42,7 +42,7 @@
       </div>
       <div *ngIf="command.type === 'click' || command.type === 'write'" class="col-3">
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Selector">
+          <input [(ngModel)]="command.selector" matInput placeholder="Selector">
         </mat-form-field>
       </div>
       <div class="col-3 checkbox-p-top">
